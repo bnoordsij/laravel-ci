@@ -44,6 +44,9 @@ jobs:
         name: vendor
         path: vendor
 
+    - name: Run PHPCS
+      run: ./vendor/bin/phpcs --standard=PSR12 ./app
+
   test:
 
     runs-on: ubuntu-latest
