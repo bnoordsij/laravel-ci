@@ -27,6 +27,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: vendor
+          path: vendor
 
       - name: Run PHPCS
         run: ./vendor/bin/phpcs --standard=PSR12 .
